@@ -1,0 +1,50 @@
+.room {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.room button {
+    width: fit-content;
+}
+
+.list {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.taskList {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.listName {
+    margin-bottom: 10px;
+}
+
+.inputWrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-top: 20px;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.addListBtn {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+
+.undoBtn {
+    position: absolute;
+    left: 130px;
+    top: 15px;
+}
