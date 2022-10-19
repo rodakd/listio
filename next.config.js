@@ -2,7 +2,7 @@
 const nextConfig = {
     reactStrictMode: true,
     swcMinify: true,
-    assetPrefix: '.',
+    assetPrefix: 'listio',
 }
 
 module.exports = nextConfig
