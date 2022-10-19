@@ -21,7 +21,7 @@ export function useRoom(serverRoom) {
         }
 
         setRoom(newRoom)
-        fetch('/listio/api/update-room', {
+        fetch('/api/update-room', {
             headers: {
                 Accept: 'application/json',
                 'Content-Type': 'application/json',
