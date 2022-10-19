@@ -11,7 +11,7 @@ export default function Home() {
     const createNewList = async () => {
         setError('')
         setIsLoading(true)
-        const response = await fetch('/api/create-room')
+        const response = await fetch('/listio/api/create-room')
         const { roomId } = await response.json().catch(() => ({}))
         if (!roomId) {
             setError('Failed to create a room')

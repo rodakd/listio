@@ -20,7 +20,7 @@ export default function Room({ serverRoom }) {
             return
         }
 
-        await fetch('/api/socket')
+        await fetch('/listio/api/socket')
         const socket = io()
         socket.emit('join', serverRoom.id)
         socket.on('roomUpdated', setRoom)
