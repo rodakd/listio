@@ -67,7 +67,12 @@ export function List({ list, addTask, deleteTask, toggleTask }) {
             <div className={styles.taskList}>
                 {list.tasks.map((task) => (
                     <div key={task.id} className={styles.task}>
-                        <Checkbox size={35} label={task.text} onChange={() => toggleTask(list.id, task.id)} />
+                        <Checkbox
+                            checked={task.checked}
+                            size={35}
+                            label={task.text}
+                            onChange={() => toggleTask(list.id, task.id)}
+                        />
                         <ActionIcon onClick={() => deleteTask(list.id, task.id)}>
                             <RiDeleteBin6Line size={24} />
                         </ActionIcon>
